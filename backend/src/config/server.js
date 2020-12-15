@@ -1,10 +1,10 @@
-const port = 3003
+const port = 3003;
 
-import bodyParser, { urlencoded } from 'body-parser'
-import express from 'express'
-const server = express()
+const bodyParser = require('body-parser');
+const express = require('express');
+const server = express();
 
-server.use(urlencoded({ extended: true }))
+server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
 
 server.listen(port, function(){

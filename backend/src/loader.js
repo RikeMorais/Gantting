@@ -1,1 +1,1 @@
-import './config/server';
+require ('./config/server');
